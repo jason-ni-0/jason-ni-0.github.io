@@ -37,11 +37,13 @@ const webLinks = [
 ];
 
 const mobileLinks = [
+  { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Open Source", path: "/open-source" },
-  { name: "Blog", path: "/blog" },
-  { name: "Tech Stack", path: "/tech-stack" },
-  { name: "Developer Story", path: "/story-timeline" }
+  { name: "Projects", path: "/projects" },
+  // { name: "Open Source", path: "/open-source" },
+  // { name: "Blog", path: "/blog" },
+  // { name: "Tech Stack", path: "/tech-stack" },
+  // { name: "Developer Story", path: "/story-timeline" }
   
 ];
 
@@ -93,13 +95,13 @@ export default function TopNav() {
           maxW={800}
           mx="auto"
         >
-          {/* <IconButton
+          <IconButton
             size={"md"}
             icon={isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
             aria-label={"Open Menu"}
             display={["inherit", "inherit", "none"]}
             onClick={isOpen ? onClose : onOpen}
-          /> */}
+          />
             <HStack
               as={"nav"}
               spacing={4}
@@ -113,9 +115,8 @@ export default function TopNav() {
                   onClose={onClose}
                 />
               ))}
-              {/*
               <Menu isLazy>
-                <MenuButton
+                {/* <MenuButton
                   as={Button}
                   variant="ghost"
                   size="sm"
@@ -130,8 +131,8 @@ export default function TopNav() {
                   rightIcon={<BiChevronDown size={18} />}
                 >
                   Links
-                </MenuButton>
-                <MenuList zIndex={5}>
+                </MenuButton> */}
+                {/* <MenuList zIndex={5}>
                   <Link as={RouterNavLink} to="/tech-stack">
                     <MenuItem>
                       <HStack>
@@ -178,11 +179,10 @@ export default function TopNav() {
                         />
                         <Text>Achievements</Text>
                       </HStack>
-                    </MenuItem>
+                    </MenuItem> 
                   </Link>
-                </MenuList>
+                </MenuList>*/}
               </Menu>
-              */}
             </HStack>
           <Flex alignItems={"center"}>
             <IconButton
@@ -213,7 +213,7 @@ export default function TopNav() {
           </Flex>
         </Flex>
 
-        {/* {isOpen ? (
+        {isOpen ? (
           <Box
             pb={4}
             w={["100%", "100%", "80%"]}
@@ -231,7 +231,7 @@ export default function TopNav() {
               ))}
             </Stack>
           </Box>
-        ) : null} */}
+        ) : null}
       </Box>
     </>
   );
