@@ -27,8 +27,8 @@ export const companies = [
     title: "Bank of New York Mellon",
     alt: "BNY image",
     role: "Software Engineer Intern",
-    desc: "Overhauling Digital Assets platform to Java 17 and Spring Boot 3 to eliminate previous security vulnerabilities.",
-    period: "Jun 2023 - Present",
+    desc: "Overhauling Digital Assets tokenization platform to Java 17 and Spring Boot 3 to eliminate previous Spring web vulnerabilities. Enhanced security by implementing Spring security and configuring OAuth 2.0, all while (learning the importance of) cleanly documenting the migration for future engineers to reference. On the same note of maintenance, I set up a centralized dependency management system for painless future updates and added a logging service for the wallet provider service. All deployed in production!",
+    period: "Jun 2023 - Aug 2023",
     logo: BNYLogo
   },
   {
@@ -42,7 +42,7 @@ export const companies = [
   {
     title: "UCSB Computer Architecture Lab",
     alt: "UCSB image",
-    role: "Research Intern",
+    role: "Undergraduate Research Assisstant",
     desc: "As cloud systems grow in complexity, more layers in the stack use of technologies like containerization and virtualization. Function-as-a-Service (FaaS) /serverless systems take advantage of these technologies to provide developers with convenient new programming paradigm where language-agnostic applications can be deployed at cloud scale without any need for DevOps. Unfortunately, we have found that FaaS applications violate common architectural wisdom by exhibiting extremely poor temporal locality. To achieve faster FaaS runtimes, I ported profiler functions onto a modified a RISC-V Debian-Linux system using OpenFaaS, a framework for building and deploying serverless functions using Docker and Kubernetes (sadly OpenFaaS did not work natively with RISC-V), to finally benchmark the functions.",
     period: "Jun 2022 – Present",
     logo: UCSBLogo

@@ -4,15 +4,39 @@ import soapscribe from "assets/images/projects/soapScribe.png";
 import arthub from "assets/images/projects/arthub.png";
 import featWear from "assets/images/projects/featWear.png";
 import feat from "assets/images/projects/feat.png";
+import soapTemplates from "assets/images/projects/soapTemplates.png"
+import realismGraphics from "assets/images/projects/realismGraphics.png"
 
 export const projectsList = [
   {
+    id: 0,
+    title: "SOAPScribe Templates",
+    link: "https://soapscribe.web.app/",
+    logo: soapTemplates,
+    desc: `Building on SOAPScribe's success in optimizing medical clinics, my aim was to further enhance the service's impact and assist a wider range of clinics. Addressing 
+    a common concern, the delay in template generation, particularly when accessing previous templates, was identified. To streamline this, I implemented multi-threaded API calls 
+    and introduced a template persistence and search feature. This enhancement empowers users to save templates, facilitating quick access to past ones, resulting in a significantly 
+    more efficient process.`,
+    gitlink: "https://github.com/jason-ni-0/soapscribe-templates"
+  },
+  {
+    id: 0,
+    title: "Realism Graphics",
+    link: "https://github.com/jason-ni-0/realism_graphics",
+    logo: realismGraphics,
+    desc: `Fueled by my passion for video games and their stunning graphics, I ventured beyond avid playing and delved into creation out of curiosity. I crafted a graphics engine capable of 
+    rendering multi-object 3D scenes with ray tracing. It incorporates advanced elements like gamma correction, true Lambertian reflection, defocus effects, custom camera angles, 
+    and texture mapping, just like many games. The engine also supports path tracing for glass, metal, and diffuse surfaces. This journey allowed me to turn my gaming interest into a tangible tool for lifelike 
+    visual experiences. However, it's definitely not fast enough to render moving scenes in real time, maybe yet... `,
+    gitlink: "https://github.com/jason-ni-0/realism_graphics"
+  },
+  {
     id: 1,
     title: "SOAPScribe",
-    link: "https://soapscribe.onrender.com/",
+    link: "https://soapscribe.web.app/",
     logo: soapscribe,
     desc: `In a world where healthcare costs continue to rise, the need for efficient and cost-effective solutions becomes paramount. Recognizing the inefficiencies in medical 
-    practices, particularly in the time-consuming task of writing SOAP documentation, I developed a a tool that leverages the OpenAI API to apply the capabilities of artificial 
+    practices, particularly in the time-consuming task of writing SOAP documentation, I developed a tool that leverages the OpenAI API to apply the capabilities of artificial 
     intelligence to generate SOAP note templates. The tool is currently in use by three clinics in southern California, saving them significant amounts of money and 
     time.`,
     gitlink: "https://github.com/jason-ni-0/soapscribe"
@@ -66,7 +90,7 @@ export const projectsList = [
     logo: groshare,
     desc: `Navigating the world of grocery shopping as a college student living off-campus can be quite the hassle. The best deals often come in bulk, but the challenge lies in 
     what to do with the surplus that you simply can't consume on your own. GroShare enables users to share their extra food products with their local communities, minimizing waste 
-    and fostering a spirit of sharing and cooperation.Built at SBHacks with teammates Yuji and Shialan.`,
+    and fostering a spirit of sharing and cooperation. Built at SBHacks with teammates Yuji and Shialan.`,
     gitlink: "https://github.com/jason-ni-0/groshare"
   },
 ];
